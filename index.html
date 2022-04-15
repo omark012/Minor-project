@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neoflix-Home page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightslider.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/lightslider.js"></script>
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+
+        <!-- menu-list -->
+        <ul class="menu-list v-class">
+            <li class="active-menu"><a href="">Home</a></li>
+            <li><a href="#mov">Movies</a></li>
+            <li><a href="">Live Tv</a></li>
+            <li><a href="">Showcase</a></li>
+        </ul>
+
+        <!-- search-bar -->
+        <div class="search-bar v-class">
+            <input type="text" class="search-input" placeholder="Find Your Favourite Movies..">
+            <i class="fas fa-search s-btn"></i>
+        </div>
+
+        <!-- login -->
+        <div>
+            <button class="login-btn v-class">Login</button>
+        </div>
+
+        <!-- responsive icons -->
+
+        <!-- menu-icon-1 -->
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- menu-icon-2 -->
+        <!-- <div class="menu-icon">
+            <i class="fas fa-times"></i>
+        </div> -->
+
+    </nav>
+
+    <main>
+
+        <div class="search-container">
+
+        </div>
+
+        <div class="banner">
+            <div class="content">
+                <h1 class="banner-title">money heist</h1>
+                <p class="banner-desc">Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a
+                    criminal mastermind manipulates the police to carry out his plan.</p>
+                <div class="banner-buttons">
+                    <button class="banner-btn watch-btn"><i class="fas fa-play"></i>Watch Trailer</button>
+                    <button class="banner-btn"><i class="fas fa-bars"></i>My List</button>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+        <div class="trailer display">
+            <iframe width="100%" height="480" src="https://www.youtube.com/embed/uwsmkWh0S5Y"  title="YouTube video player"
+                frameborder="0" allow=" autoplay;encrypted-media; picture-in-picture" allowfullscreen></iframe>
+    
+            <i class="fas fa-times close-btn"></i>
+    
+        </div>
+
+        <div class="container">
+            <!-- Showcase -->
+            <div class="showcase">
+                <h2 class="showcase-head">Showcase</h2>
+                <ul id="autoWidth" class="cs-hidden">
+
+                    <li class="item-a">
+                        <div class="showcase-box">
+                            <img src="img/show-1.jpg" alt="there is supposed to be an image">
+                        </div>
+                    </li>
+                    <li class="item-b">
+                        <div class="showcase-box">
+                            <img src="img/show-2.jpg" alt="there is supposed to be an image">
+                        </div>
+                    </li>
+                    <li class="item-c">
+                        <div class="showcase-box">
+                            <img src="img/show-3.jpg" alt="there is supposed to be an image">
+                        </div>
+                    </li>
+                    <li class="item-d">
+                        <div class="showcase-box">
+                            <img src="img/show-1.jpg" alt="there is supposed to be an image">
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <!-- latest movies -->
+
+            <div class="movies" id="mov">
+                <h2 class="movies-head">Latest Movies</h2>
+                <ul id="autoWidth2" class="cs-hidden">
+
+                    <li class="item-a">
+                        <div class="movies-box">
+                            <img src="img/mov-1.jpg" alt="there is supposed to be an image">
+                        </div>
+                    </li>
+                    <li class="item-b">
+                        <div class="movies-box">
+                            <img src="img/mov-2.jpg" alt="there is supposed to be an image">
+                        </div>
+                    </li>
+                    <li class="item-c">
+                        <div class="movies-box">
+                            <img src="img/mov-3.jpg" alt="there is supposed to be an image">
+                        </div>
+                    </li>
+                    <li class="item-d">
+                        <div class="movies-box">
+                            <img src="img/mov-4.jpg" alt="there is supposed to be an image">
+                        </div>
+                    </li>
+                    <li class="item-e">
+                        <div class="movies-box">
+                            <img src="img/mov-5.jpg" alt="there is supposed to be an image">
+                        </div>
+                    </li>
+                    <li class="item-f">
+                        <div class="movies-box">
+                            <img src="img/mov-6.jpg" alt="there is supposed to be an image">
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Top rated movies -->
+
+            <div class="movies">
+                <h2 class="movies-head">Top Rated Movies</h2>
+                <ul id="autoWidth3" class="cs-hidden">
+
+                    <li class="item-a">
+                        <div class="movies-box">
+                            <img src="img/mov-7.jpg" alt="there is supposed to be an image">
+                        </div>
+                    </li>
+                    <li class="item-b">
+                        <div class="movies-box">
+                            <img src="img/mov-4.jpg" alt="there is supposed to be an image">
+                        </div>
+                    </li>
+                    <li class="item-c">
+                        <div class="movies-box">
+                            <img src="img/mov-9.jpg" alt="there is supposed to be an image">
+                        </div>
+                    </li>
+                    <li class="item-d">
+                        <div class="movies-box">
+                            <img src="img/mov-8.jpg" alt="there is supposed to be an image">
+                        </div>
+                    </li>
+                    <li class="item-e">
+                        <div class="movies-box">
+                            <img src="img/mov-3.jpg" alt="there is supposed to be an image">
+                        </div>
+                    </li>
+                    <li class="item-f">
+                        <div class="movies-box">
+                            <img src="img/mov-5.jpg" alt="there is supposed to be an image">
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Neoflix Copyright &copy;-all rights reserved</p>
+    </footer>
+
+
+    <!-- slider script -->
+
+    <script>
+        $(document).ready(function () {
+            $('#autoWidth,#autoWidth2,#autoWidth3').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth,#autoWidth2,#autoWidth3').removeClass('cS-hidden');
+                }
+            });
+        });
+    </script>
+
+    <!-- page script -->
+    <script src="js/new.js"></script>
+</body>
+
+</html>
